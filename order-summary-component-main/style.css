@@ -12,18 +12,56 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw;
   overflow: hidden;
-
   display: flex;
   justify-content: center;
 }
 h1 {
   font-family: "Red Hat Display", sans-serif;
+  font-weight: 1000;
+}
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
+  font-size: 100%;
+}
+p {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+  font-size: 100%;
 }
 img {
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+button {
+  background-image: linear-gradient(
+    to right,
+    hsl(245, 75%, 52%) 0%,
+    hsl(293, 100%, 18%) 51%,
+    hsl(245, 75%, 52%) 100%
+  );
+}
+button {
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .attribution {
   font-size: 100%;
   text-align: center;
@@ -44,4 +82,28 @@ img {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+.text-container {
+  margin: 30px 50px 50px 50px;
+}
+.interaction-container {
+  background-color: hsl(225, 100%, 94%);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.icon-music {
+  width: 50px;
+}
+#annual-plan {
+  width: 50%;
+}
+#change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 800;
 }
