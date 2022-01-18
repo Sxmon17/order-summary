@@ -19,10 +19,13 @@ h1 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 1000;
 }
+
 h3 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 800;
   font-size: 100%;
+  width: 50%;
+  white-space: nowrap;
 }
 p {
   font-family: "Red Hat Display", sans-serif;
@@ -42,8 +45,6 @@ button {
     hsl(293, 100%, 18%) 51%,
     hsl(245, 75%, 52%) 100%
   );
-}
-button {
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
@@ -54,6 +55,8 @@ button {
   border-radius: 10px;
   display: block;
   width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 800;
 }
 
 button:hover {
@@ -63,6 +66,7 @@ button:hover {
 }
 
 .attribution {
+  margin-bottom: 20px;
   font-size: 100%;
   text-align: center;
   position: absolute;
@@ -73,8 +77,8 @@ button:hover {
 }
 .card-container {
   background-color: hsl(225, 100%, 98%);
-  width: 22%;
-  height: 65%;
+  width: 500px;
+  height: 80%;
   margin-top: 10vh;
   text-align: center;
   border-radius: 30px;
@@ -100,10 +104,44 @@ button:hover {
 .icon-music {
   width: 50px;
 }
-#annual-plan {
-  width: 50%;
-}
 #change {
   color: hsl(245, 75%, 52%);
   font-weight: 800;
+}
+#price {
+  margin-left: 10%;
+}
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 400px;
+  }
+  #price {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-container {
+    margin-top: 40px;
+    margin-left: -20px;
+    width: 365px;
+  }
+  h1 {
+    margin-bottom: -20px;
+  }
+  #price {
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+  html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    width: 99vw;
+  }
 }
