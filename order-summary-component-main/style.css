@@ -76,7 +76,7 @@ button:hover {
   color: hsl(228, 45%, 44%);
 }
 .card-container {
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsl(0, 0%, 100%);
   width: 500px;
   height: 80%;
   margin-top: 10vh;
